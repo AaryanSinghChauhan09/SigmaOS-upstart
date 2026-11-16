@@ -1,0 +1,10 @@
+[package]
+name = "SigmaOS-upstart2"
+version = "0.1.0"
+edition = "2021"
+license = "Apache-2.0"
+description = "SigmaOS upstart2 component"
+
+[lib]
+name = "upstart2"
+path = "src/lib.rs"

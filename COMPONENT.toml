@@ -1,16 +1,16 @@
 [component]
-name = "SigmaOS-upstart2"
+name = "SigmaOS-upstart"
 tier = 2
 stability = "beta"
-language = "rust"
-description = "Upstart init system compatibility layer with event-based init and job management"
+language = "shell"
+description = "SigmaOS integration for Upstart init system: package management, config deployment, and CLI helpers."
 upstream = []
 
 [contract]
-provides = ["component"]
+provides = ["app-manager:upstart"]
 depends_on = []
 
 [maturity]
 status = "Implemented"
-test_evidence = "Compiles and passes AAA unit tests"
-next_milestone = "Hardware and runtime integration"
+test_evidence = "test.sh: syntax + metadata + isolated-HOME lifecycle checks"
+next_mestone = "Per-app config polish"
